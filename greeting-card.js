@@ -16,11 +16,14 @@ const bdayFront = bdayCard.makeFrontMessage("Happy Birthday, Jabroni!");
 const bdayInside = bdayCard.makeInsideMessage("Another year older, another year closer to death!");
 console.log(bdayFront);
 // declare vars for the html divs
-const divFront = document.getElementById("bday-front");
-const divInside = document.getElementById("bday-inside");
+const divBdayFront = document.getElementById("bday-front");
+const divBdayInside = document.getElementById("bday-inside");
+// gives the divs classes for styling
+divBdayFront.setAttribute("class", "bday");
+divBdayInside.setAttribute("class", "bday");
 //assign the messages to the innerhtml of the divs
-divFront.innerHTML = bdayFront;
-divInside.innerHTML = bdayInside;
+divBdayFront.innerHTML = bdayFront;
+divBdayInside.innerHTML = bdayInside;
 
 // Valentine's Day card
 const vdayCard = Object.create(cardMaker);
@@ -30,6 +33,10 @@ console.log(vdayFront);
 // declare vars for the html divs
 const vFront = document.getElementById("vday-front");
 const vInside = document.getElementById("vday-inside");
+// gives the divs classes for styling
+vFront.setAttribute("class", "vday");
+vInside.setAttribute("class", "vday");
 //assign the messages to the innerhtml of the divs
 vFront.innerHTML = vdayFront;
 vInside.innerHTML = vdayInside;
+
