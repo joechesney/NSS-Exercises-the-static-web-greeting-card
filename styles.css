@@ -15,3 +15,15 @@ div#vday-inside {
     text-align: center;
     
 }
+
+.bday {
+    color: blue;
+    text-shadow: 1px 1px purple;
+}
+
+.vday {
+
+    color: red;
+    text-shadow: 1px 1px hotpink;
+    
+}
